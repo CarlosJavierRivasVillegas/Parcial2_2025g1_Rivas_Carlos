@@ -1,0 +1,96 @@
+/* Importar la librería Animate.css para animaciones */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+.navbar-brand {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #6c757d !important;
+}
+
+/* Estilos del banner principal */
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* Estilos de la sección de servicios */
+.service-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .service-icon {
+    transform: translateY(-10px);
+}
+
+/* Animación para los cards de servicios al hacer scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos de los iconos sociales en el footer */
+.social-icon {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #007bff !important;
+    transform: translateY(-5px);
+}
+/* Estilos del contenedor de la tarjeta de servicio */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los iconos de servicio */
+.service-icon {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta del servicio (el icono se mueve) */
+.card:hover .service-icon {
+    transform: translateY(-10px) rotate(10deg);
+}
+
+/* Animación para los cards de servicios al hacer scroll (la animación de entrada) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Clase que se añade con JavaScript para activar la animación */
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
