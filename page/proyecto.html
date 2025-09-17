@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Proyectos - CoderHub</title>
+  <meta name="description" content="Descubre nuestros proyectos destacados en desarrollo web, aplicaciones móviles y soluciones tecnológicas innovadoras.">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Iconos de Bootstrap -->
@@ -17,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <!-- Logotipo -->
-      <a class="navbar-brand fw-bold" href="/index.html">Propuesta Original</a>
+      <a class="navbar-brand fw-bold" href="../index.html">CoderHub</a>
       <!-- Botón responsive -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -25,9 +26,9 @@
       <!-- Menú -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/page/proyecto.html">Proyecto</a></li>
-          <li class="nav-item"><a class="nav-link" href="/page/about.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="proyecto.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
         </ul>
       </div>
     </div>
@@ -43,64 +44,97 @@
     <h2 class="text-center mb-4">Proyectos Destacados</h2>
     <div class="row g-4">
       <!-- Proyecto 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 1">
-          <div class="card-body">
-            <h5 class="card-title">E-Commerce Express</h5>
-            <p class="card-text">Plataforma de comercio electrónico ágil para pequeñas empresas, con pagos en línea y
-              carrito optimizado.</p>
+      <div class="col-md-6 col-lg-3 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="E-Commerce Express" data-description="Plataforma de comercio electrónico ágil para pequeñas empresas, con pagos en línea y carrito optimizado. Desarrollada con tecnologías modernas para una experiencia de usuario fluida." data-image="https://via.placeholder.com/400x250" style="cursor: pointer;">
+          <div class="card h-100 shadow-sm position-relative">
+            <img src="https://cide.pucp.edu.pe/wp-content/uploads/2023/05/comercio-electronico-compras-linea-negocio-internet-tecnologia-scaled.jpg" class="card-img-top" alt="Imagen representativa de E-Commerce Express, plataforma de comercio electrónico">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Express</h5>
+              <p class="card-text">Plataforma de comercio electrónico ágil para pequeñas empresas, con pagos en línea y
+                carrito optimizado.</p>
+              <button class="btn btn-primary position-absolute top-0 end-0 m-2 info-btn" aria-label="Ver detalles de E-Commerce Express" style="z-index: 10; display: none;">
+                <i class="bi bi-info-circle"></i>
+              </button>
+            </div>
           </div>
-        </div>
       </div>
       <!-- Proyecto 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 2">
+      <div class="col-md-6 col-lg-3 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="HealthTrack App" data-description="Aplicación móvil que permite monitorear la salud del usuario con métricas en tiempo real. Incluye seguimiento de actividad física, nutrición y bienestar general." data-image="https://via.placeholder.com/400x250" style="cursor: pointer;">
+        <div class="card h-100 shadow-sm position-relative">
+          <img src="https://cdn.dribbble.com/users/2096205/screenshots/10979344/media/585ad97aab5098670d4e297817f7e27d.png?compress=1&resize=1600x1200&vertical=top" class="card-img-top" alt="Imagen representativa de HealthTrack App, aplicación móvil de monitoreo de salud">
           <div class="card-body">
             <h5 class="card-title">HealthTrack App</h5>
             <p class="card-text">Aplicación móvil que permite monitorear la salud del usuario con métricas en tiempo
               real.</p>
+            <button class="btn btn-primary position-absolute top-0 end-0 m-2 info-btn" aria-label="Ver detalles de HealthTrack App" style="z-index: 10; display: none;">
+              <i class="bi bi-info-circle"></i>
+            </button>
           </div>
         </div>
       </div>
       <!-- Proyecto 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 3">
+      <div class="col-md-6 col-lg-3 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="SmartCity Dashboard" data-description="Panel de control para la gestión de datos urbanos: tráfico, seguridad y energía en ciudades inteligentes. Utiliza IoT y big data para optimizar recursos municipales." data-image="https://via.placeholder.com/400x250" style="cursor: pointer;">
+        <div class="card h-100 shadow-sm position-relative">
+          <img src="https://img.freepik.com/premium-photo/smart-city-dashboard-showing-realtime-data-city_976492-129354.jpg?w=2000" class="card-img-top" alt="Imagen representativa de SmartCity Dashboard, panel de control para ciudades inteligentes">
           <div class="card-body">
             <h5 class="card-title">SmartCity Dashboard</h5>
             <p class="card-text">Panel de control para la gestión de datos urbanos: tráfico, seguridad y energía en
               ciudades inteligentes.</p>
+            <button class="btn btn-primary position-absolute top-0 end-0 m-2 info-btn" aria-label="Ver detalles de SmartCity Dashboard" style="z-index: 10; display: none;">
+              <i class="bi bi-info-circle"></i>
+            </button>
           </div>
         </div>
       </div>
       <!-- Proyecto 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 4">
+      <div class="col-md-6 col-lg-3 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="EduLearn Platform" data-description="Plataforma educativa en línea con cursos interactivos y herramientas de gamificación. Diseñada para estudiantes y profesores con contenido multimedia y evaluaciones dinámicas." data-image="https://via.placeholder.com/400x250" style="cursor: pointer;">
+        <div class="card h-100 shadow-sm position-relative">
+          <img src="https://img.freepik.com/vector-premium/concepto-diseno-logotipo-world-learning-education_761413-7370.jpg?w=2000" class="card-img-top" alt="Imagen representativa de EduLearn Platform, plataforma educativa en línea">
           <div class="card-body">
             <h5 class="card-title">EduLearn Platform</h5>
             <p class="card-text">Plataforma educativa en línea con cursos interactivos y herramientas de gamificación.
             </p>
+            <button class="btn btn-primary position-absolute top-0 end-0 m-2 info-btn" aria-label="Ver detalles de EduLearn Platform" style="z-index: 10; display: none;">
+              <i class="bi bi-info-circle"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">Detalles del Proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="" class="img-fluid mb-3">
+          <h4 id="modalTitle"></h4>
+          <p id="modalDescription"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer id="contacto" class="bg-dark text-white py-4">
     <div class="container text-center">
-      <p class="mb-1">Teléfono: +57 123 456 7890 | Correo: contacto@propuesta.com</p>
+      <p class="mb-1">Teléfono: +57 321 332 2252 | Correo: ca.rivas@udla.edu.co</p>
       <div>
-        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1EY4En8Pxa/" class="text-white me-3 social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/3213322252" class="text-white me-3 social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/carlos_rivas_20/" class="text-white me-3 social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 social-icon"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/CarlosJavierRivasVillegas" class="text-white me-3 social-icon" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white me-3 social-icon"><i class="bi bi-linkedin"></i></a>
       </div>
-      <p class="mt-3 mb-0">&copy; 2025 Propuesta Original - Todos los derechos reservados</p>
+      <p class="mt-3 mb-0">© 2025 CoderHub.run - Todos los derechos reservados</p>
     </div>
   </footer>
   <!-- Bootstrap JS -->
